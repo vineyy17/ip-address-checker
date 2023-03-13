@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;900&family=Roboto:wght@400;900&family=Rubik:wght@400;500;700&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+
+  <div class="top-bg"></div>
+  <div class="bottom-bg" id="mapid"></div>
+
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-sm-12 text-center mx-auto">
+    <h1 class="text-center my-3 text-light app-title">IP Address Tracker</h1>
+
+    <form class="text-center my-3 ipForm">
+     <div class="input-group">
+      <input type="text" name="address" placeholder="Search for any IP address or domain" class="form-control">
+      <div class="input-group-append">
+        <input type="submit" class="btn" value=">">
+      </div>
+     </div>
+    </form>
+
+  </div>
+
+    <div class="card-group col-lg-12 mx-auto details">
+        <div class="card">
+          <p class="card-upper-text">IP ADDRESS</p>
+          <h1 class="card-lower-text"></h1>
+        </div>
+        <div class="card">
+          <p class="card-upper-text">LOCATION</p>
+          <h1 class="card-lower-text"></h1>
+        </div>
+        <div class="card">
+          <p class="card-upper-text">TIMEZONE</p>
+          <h1 class="card-lower-text"></h1>
+        </div>
+        <div class="card">
+          <p class="card-upper-text">ISP</p>
+          <h1 class="card-lower-text"></h1>
+        </div>
+    </div>
+
+
+  </div>
+  
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="address.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body{
+    height: 100%;
+    font-family: 'Rubik';
+}
+
+.top-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background-image: url('images/pattern-bg-desktop.png');
+    background-position: center;
+    background-size: cover;
+    z-index: -1; 
+  }
+
+  .bottom-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; 
+  }
+
+.card-group{
+    margin-top: 2rem;
+}
+
+.card{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+}
+
+.card-upper-text{
+    color: gray;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.card-lower-text{
+    font-weight: 500;
+    font-size: 1.9rem;
+    padding-bottom: 2rem;
+
+}
+
+.app-title{
+    font-size: 1.7rem;
+}
+
+.btn{
+    background: black;
+    color: white;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .btn:focus{
+    outline: none !important;
+  }
+
+@media (min-width: 350px) and (max-width: 1000px){
+    .card{
+        padding-left: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding-right: 0rem;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .card-upper-text{
+        color: gray;
+        font-weight: 400;
+        font-size: 0.8rem;
+        margin-bottom: 0 !important;
+    }
+    
+    .card-lower-text{
+        font-weight: 500;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding-bottom: 0rem;
+    
+    }
+
+    .card-group{
+        margin-top: 1rem;
+    }
+    
+    .app-title{
+        font-size: 1.5rem;
+    }
+}
