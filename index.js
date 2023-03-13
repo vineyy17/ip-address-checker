@@ -41,8 +41,6 @@ const updateUI = (data) => {
 };
 
 let ip = ""
-
-// update details in based on ip
 address.updateDetails(ip)
 .then(data => {
     updateUI(data);
@@ -58,7 +56,6 @@ ipForm.addEventListener('submit', e => {
     //get ip value
     let ip = ipForm.address.value;
     ipForm.reset();
-    console.log(typeof ip, ip);
 
     // update details in based on ip
     address.updateDetails(ip)
