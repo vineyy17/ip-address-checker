@@ -61,6 +61,9 @@ body{
     outline: none !important;
     box-shadow: none !important;
   }
+  .btn:hover{
+    background-color: #d3d3d3;
+  }
   .btn:focus{
     outline: none !important;
   }
