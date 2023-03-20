@@ -1,0 +1,29 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "A website that returns your location details based on your ip address",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "serve": "webpack serve --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-lodash": "^3.3.4",
+    "dotenv-webpack": "^8.0.1",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "core-js": "^3.29.1"
+  }
+}

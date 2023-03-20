@@ -1,6 +1,6 @@
-class Address{
+export class AddressClass {
     constructor(){
-        this.key = "at_w1ysWLauoex14Ad27KkivY7UK0dvz";
+        this.key = process.env.API_KEY;
         this.ipURI = "https://geo.ipify.org/api/v2/country,city";
     }
     async updateDetails(ip){

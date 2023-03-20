@@ -1,8 +1,10 @@
+const { AddressClass } = require("./address.js");
+
 const ipForm = document.querySelector('.ipForm');
 const details = document.querySelector('.details');
 const myMap = L.map('mapid');
 
-const address = new Address();
+const address = new AddressClass();
 
 // updates the ui with data returned from api when called.
 const updateUI = (data) => {
