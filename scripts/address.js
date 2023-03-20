@@ -8,7 +8,7 @@ export class AddressClass {
         return{
             ipDets : ipDets
         }
-    }
+    };
     async getDetails(ip){
         const query = `?apiKey=${this.key}&ipAddress=${ip}`;
         const response = await fetch(this.ipURI + query);
